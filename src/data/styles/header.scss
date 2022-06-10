@@ -1,0 +1,61 @@
+header {
+  .promo {
+    background-color: #283546;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    height: 82px;
+    padding-left: 64px;
+    padding-right: 64px;
+    align-items: center;
+    background: linear-gradient(0deg, #fff 0%, #000 100%);
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline;
+        color: #fff;
+      }
+    }
+
+    .navbar-left,
+    .navbar-right {
+      font-size: 13px;
+    }
+
+    .navbar-left {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5%;
+    }
+
+    .navbar-right {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .brand-info {
+      display: flex;
+      flex-direction: column;
+
+      .logo {
+        height: 26px;
+        object-fit: contain;
+      }
+
+      .brand-info {
+        height: 11px;
+      }
+    }
+  }
+}

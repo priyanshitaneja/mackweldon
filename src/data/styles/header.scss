@@ -15,14 +15,21 @@ header {
     padding-left: 64px;
     padding-right: 64px;
     align-items: center;
+    color: white;
     background: linear-gradient(0deg, #fff 0%, #000 100%);
+
+    /* inner shadow */
+
+    /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5); */
 
     ul {
       list-style-type: none;
 
       li {
         display: inline;
-        color: #fff;
+        color: inherit;
       }
     }
 
@@ -42,6 +49,11 @@ header {
       width: 20%;
       display: flex;
       justify-content: space-between;
+
+      .quantity {
+        color: #0074b8;
+        opacity: 1;
+      }
     }
 
     .brand-info {
@@ -50,11 +62,26 @@ header {
 
       .logo {
         height: 26px;
-        object-fit: contain;
+        background: url("../assets/logo.png") no-repeat center;
       }
 
-      .brand-info {
-        height: 11px;
+      .brand-name {
+        color: white;
+        padding-top: 10px;
+      }
+    }
+
+    &:hover {
+      background-color: white;
+      background-image: none;
+      color: black;
+
+      .logo {
+        background: url("../assets/logo-black.png") no-repeat center;
+      }
+
+      .brand-name {
+        color: #000;
       }
     }
   }

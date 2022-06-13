@@ -189,6 +189,10 @@ nav {
   top: 0;
 }
 
+.transition {
+  transition: transform 0.001s linear;
+}
+
 /* responsive */
 
 @media (max-width: 1170px) {

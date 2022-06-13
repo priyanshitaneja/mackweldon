@@ -12,18 +12,15 @@ dropdown.addEventListener('mouseover', () => { // add foreach func and do this f
 
   if (!dropdownValue.classList.contains('is-opened')) {
     dropdownValue.classList.add('is-opened');
-    // nav.classList.add('nav-white-bg');
   }
 });
 
 dropdown.addEventListener('mouseout', () => {
-  // add foreach func and do this for click as well
   if (arrow.classList.contains('rotate-icon'))
     arrow.classList.remove('rotate-icon');
 
   if (dropdownValue.classList.contains('is-opened')) {
     dropdownValue.classList.remove('is-opened');
-    // nav.classList.add('nav-white-bg');
   }
 });
 
@@ -40,10 +37,11 @@ document.addEventListener('scroll', () => {
     nav.classList.contains('sticky')
   ) {
     nav.classList.remove('sticky');
+    nav.classList.add('transition');
   }
 });
 
-hamburgerMenu.addEventListener('click', ()=>{
+hamburgerMenu.addEventListener('click', () => {
   navbarLeft.classList.toggle('active');
   overlay.classList.add('active');
 
@@ -51,7 +49,7 @@ hamburgerMenu.addEventListener('click', ()=>{
     dropdownValue.classList.add('stories-mob');
 });
 
-overlay.addEventListener('click', ()=> {
+overlay.addEventListener('click', () => {
   navbarLeft.classList.remove('active');
   overlay.classList.remove('active');
   dropdownValue.classList.remove('stories-mob', 'is-opened');

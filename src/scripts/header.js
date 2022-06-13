@@ -1,51 +1,36 @@
-window.onscroll = function () {
-  // stickyFunction();
-  scrollFunction();
-};
-
 const dropdown = document.querySelector('.nav-stories');
 const dropdownValue = document.querySelector('.stories-dropdown');
-
 const nav = document.querySelector('nav');
-// let sticky = 100;
-
 const arrow = document.querySelector('.nav-stories i');
+const hamburgerMenu = document.querySelector('nav .menu');
+const navbarLeft = document.querySelector('nav .navbar-left');
 
 dropdown.addEventListener('mouseover', () => {
-  if(arrow.classList.contains('rotate-icon'))
-    arrow.classList.remove('rotate-icon');
-  else 
+  if(!arrow.classList.contains('rotate-icon'))
     arrow.classList.add('rotate-icon');
 
-  if (dropdownValue.classList.contains('is-opened')) {
-    dropdownValue.classList.remove('is-opened');
-  }
-  else {
+  if (!dropdownValue.classList.contains('is-opened')) {
     dropdownValue.classList.add('is-opened');
-    nav.classList.add('nav-white-bg');
+    // nav.classList.add('nav-white-bg');
   }
 });
 
-// function stickyFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     nav.classList.add('sticky');
-//   } else {
-//     nav.classList.remove('sticky');
-//   }
-// }
-
-function scrollFunction() {
+document.addEventListener('scroll', () => {
   if (
-    (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) &&
-    (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100)
+    (document.body.scrollTop > 38 || document.documentElement.scrollTop > 38) &&
+    (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200)
   ) {
     nav.classList.add('sticky');
-  } else {
-    console.log("remove", nav);
-    if(nav.classList.contains('sticky')) {
-      nav.classList.remove('sticky');
-      // nav.classList.add('xyz');
-    }
-    console.log(nav.classList);
   }
-}
+  if (
+    (document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200) &&
+    nav.classList.contains('sticky')
+  ) {
+    nav.classList.remove('sticky');
+  }
+});
+
+hamburgerMenu.addEventListener('click', ()=>{
+  navbarLeft.classList.toggle('active');
+});

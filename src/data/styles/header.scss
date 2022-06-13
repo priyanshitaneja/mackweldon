@@ -7,94 +7,101 @@ header {
     height: 38px;
     line-height: 38px;
   }
+}
 
-  nav {
-    display: flex;
-    justify-content: space-between;
-    height: 82px;
-    padding-left: 64px;
-    padding-right: 64px;
-    align-items: center;
-    color: white;
-    background: linear-gradient(0deg, #fff 0%, #000 100%);
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 82px;
+  padding-left: 64px;
+  padding-right: 64px;
+  align-items: center;
+  color: white;
+  background: linear-gradient(0deg, #fff 0%, #000 100%);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 
-    /* inner shadow */
+  /* inner shadow */
 
-    /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
+  /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
     box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5); */
 
-    ul {
-      list-style-type: none;
-      cursor: pointer;
+  .menu {
+    display: none;
+  }
 
-      li {
-        display: inline;
-        color: inherit;
+  ul {
+    list-style-type: none;
+    cursor: pointer;
 
-        &:hover {
-          border-bottom: 4px solid grey;
-        }
+    li {
+      display: inline;
+      color: inherit;
+
+      &:hover {
+        border-bottom: 4px solid grey;
       }
     }
+  }
 
-    .navbar-left,
-    .navbar-right {
-      font-size: 13px;
-      line-height: 77px;
-      height: 100%;
+  .navbar-left,
+  .navbar-right {
+    font-size: 13px;
+    line-height: 77px;
+    height: 100%;
+  }
+
+  .navbar-left {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+
+    i:hover {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .navbar-right {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+
+    .quantity {
+      color: #0074b8;
+      opacity: 1;
+    }
+  }
+
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .logo {
+      height: 26px;
+      background: url("../assets/logo.png") no-repeat center;
     }
 
-    .navbar-left {
-      width: 22%;
-      display: flex;
-      justify-content: space-between;
-      padding-right: 10%;
+    .brand-name {
+      color: white;
+      padding-top: 10px;
+    }
+  }
 
-      i:hover {
-        transform: rotate(-180deg);
-      }
+  &:hover {
+    background-color: white;
+    background-image: none;
+    color: black;
+
+    .logo {
+      background: url("../assets/logo-black.png") no-repeat center;
     }
 
-    .navbar-right {
-      width: 22%;
-      display: flex;
-      justify-content: space-between;
-
-      .quantity {
-        color: #0074b8;
-        opacity: 1;
-      }
-    }
-
-    .brand-info {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-
-      .logo {
-        height: 26px;
-        background: url("../assets/logo.png") no-repeat center;
-      }
-
-      .brand-name {
-        color: white;
-        padding-top: 10px;
-      }
-    }
-
-    &:hover {
-      background-color: white;
-      background-image: none;
-      color: black;
-
-      .logo {
-        background: url("../assets/logo-black.png") no-repeat center;
-      }
-
-      .brand-name {
-        color: #000;
-      }
+    .brand-name {
+      color: #000;
     }
   }
 }
@@ -103,6 +110,9 @@ header {
   padding: 30px 85px;
   border-top: 1px solid #d9d9d9;
   display: none;
+  position: absolute;
+  top: 120px;
+  background-color: white;
 
   ul {
     display: grid;
@@ -165,10 +175,80 @@ header {
 
 .nav-white-bg {
   background-color: #fff;
+  background-image: none;
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
+}
+
+/* responsive */
+
+@media (max-width: 1170px) {
+  header .promo {
+    height: 28px;
+    line-height: 28px;
+  }
+
+  nav {
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .menu {
+      display: flex;
+      width: 22%;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      line-height: 40px;
+    }
+
+    .navbar-left {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+
+      .li {
+        padding: 10px 0;
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    .brand-info {
+      .logo {
+        display: none;
+      }
+
+      .brand-name {
+        padding-top: 0;
+      }
+    }
+
+    .navbar-right {
+      justify-content: flex-end;
+      align-items: flex-end; /* might not need it if center brandName */
+
+      .user-name {
+        display: none;
+      }
+
+      .search {
+        span {
+          display: none;
+        }
+      }
+
+      .cart {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 }

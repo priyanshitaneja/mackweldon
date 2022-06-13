@@ -1,12 +1,10 @@
 header {
-  .promo {
-    background-color: #283546;
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    height: 38px;
-    line-height: 38px;
-  }
+  background-color: #283546;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
 }
 
 nav {
@@ -194,7 +192,7 @@ nav {
 /* responsive */
 
 @media (max-width: 1170px) {
-  header .promo {
+  header {
     height: 28px;
     line-height: 28px;
   }
@@ -280,10 +278,6 @@ nav {
   .stories-dropdown {
     top: 100px;
 
-    ul a img {
-      width: 100%; /* do this in a better way */
-    }
-
     &.stories-mob {
       z-index: 99;
       width: 300px;
@@ -291,6 +285,10 @@ nav {
 
       ul {
         display: flex;
+      }
+
+      ul a img {
+        width: 100%; /* do this in a better way */
       }
 
       .stories-info {

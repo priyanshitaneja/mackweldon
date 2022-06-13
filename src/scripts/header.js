@@ -16,6 +16,17 @@ dropdown.addEventListener('mouseover', () => { // add foreach func and do this f
   }
 });
 
+dropdown.addEventListener('mouseout', () => {
+  // add foreach func and do this for click as well
+  if (arrow.classList.contains('rotate-icon'))
+    arrow.classList.remove('rotate-icon');
+
+  if (dropdownValue.classList.contains('is-opened')) {
+    dropdownValue.classList.remove('is-opened');
+    // nav.classList.add('nav-white-bg');
+  }
+});
+
 document.addEventListener('scroll', () => {
   if (
     (document.body.scrollTop > 38 || document.documentElement.scrollTop > 38) &&

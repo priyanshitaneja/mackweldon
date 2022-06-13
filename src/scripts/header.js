@@ -4,6 +4,7 @@ const nav = document.querySelector('nav');
 const arrow = document.querySelector('.nav-stories i');
 const hamburgerMenu = document.querySelector('nav .menu');
 const navbarLeft = document.querySelector('nav .navbar-left');
+const overlay = document.querySelector('.overlay');
 
 dropdown.addEventListener('mouseover', () => {
   if(!arrow.classList.contains('rotate-icon'))
@@ -33,4 +34,11 @@ document.addEventListener('scroll', () => {
 
 hamburgerMenu.addEventListener('click', ()=>{
   navbarLeft.classList.toggle('active');
+  overlay.classList.add('active');
+});
+
+overlay.addEventListener('click', ()=> {
+  console.log('focusout');
+  navbarLeft.classList.remove('active');
+  overlay.classList.remove('active');
 });

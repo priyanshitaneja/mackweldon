@@ -1,3 +1,5 @@
-import '../styles/index.scss';
+import '../data/styles/index.scss';
+import '../data/styles/header.scss';
+import '../data/styles/common.scss';
 
-console.log('webpack starterkit');
+import './header.js';

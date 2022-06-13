@@ -155,12 +155,20 @@ nav {
       strong:hover {
         text-decoration: underline;
       }
+
+      .mob-text {
+        display: none;
+      }
     }
 
     .dropdown-img-card {
       grid-auto-flow: column;
       justify-content: end;
       margin: 0 0 0 auto;
+    }
+
+    .dropdown-mob-image {
+      display: none;
     }
   }
 }
@@ -264,6 +272,50 @@ nav {
       .cart {
         span {
           display: none;
+        }
+      }
+    }
+  }
+
+  .stories-dropdown {
+    top: 100px;
+
+    ul a img {
+      width: 100%; /* do this in a better way */
+    }
+
+    &.stories-mob {
+      z-index: 99;
+      width: 300px;
+      padding: 10px;
+
+      ul {
+        display: flex;
+      }
+
+      .stories-info {
+        display: none;
+      }
+
+      .dropdown-img-card {
+        display: none;
+      }
+
+      .dropdown-mob-image {
+        display: block;
+        width: 100%;
+      }
+
+      .mob-text {
+        font-size: 14px;
+
+        p {
+          color: grey;
+          text-align: left;
+        }
+
+        a {
+          color: #0073ff;
         }
       }
     }

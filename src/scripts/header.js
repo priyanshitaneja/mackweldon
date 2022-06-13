@@ -6,7 +6,7 @@ const hamburgerMenu = document.querySelector('nav .menu');
 const navbarLeft = document.querySelector('nav .navbar-left');
 const overlay = document.querySelector('.overlay');
 
-dropdown.addEventListener('mouseover', () => {
+dropdown.addEventListener('mouseover', () => { // add foreach func and do this for click as well
   if(!arrow.classList.contains('rotate-icon'))
     arrow.classList.add('rotate-icon');
 
@@ -35,10 +35,14 @@ document.addEventListener('scroll', () => {
 hamburgerMenu.addEventListener('click', ()=>{
   navbarLeft.classList.toggle('active');
   overlay.classList.add('active');
+
+  if(navbarLeft.classList.contains('active'))
+    dropdownValue.classList.add('stories-mob');
 });
 
 overlay.addEventListener('click', ()=> {
-  console.log('focusout');
   navbarLeft.classList.remove('active');
   overlay.classList.remove('active');
+  dropdownValue.classList.remove('stories-mob', 'is-opened');
+  arrow.classList.remove('rotate-icon');
 });

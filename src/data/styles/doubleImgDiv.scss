@@ -1,0 +1,75 @@
+.double-img-div {
+  display: flex;
+
+  .img-section {
+    position: relative;
+
+    img {
+      width: 100%;
+      z-index: -1;
+    }
+
+    .img-details {
+      z-index: 1;
+      position: absolute;
+      left: 64px;
+      bottom: 64px;
+      color: white;
+
+      .img-heading {
+        font-size: 42px;
+        padding-bottom: 16px;
+      }
+
+      .img-cta {
+        font-size: 16px;
+        background: none;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        transition: transform 0.001s linear !important;
+
+        &:hover {
+          i {
+            transform: translate(32px);
+          }
+        }
+      }
+
+      .cta-btn {
+        padding: 15px 56px;
+        color: grey;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  div.img-section:nth-child(2) { /* how to do with scss, update */
+    display: none;
+  }
+
+  .double-img-div {
+    .img-section {
+      .img-details {
+        left: 15px;
+        bottom: 33px;
+
+        .img-heading {
+          font-size: 30px;
+        }
+
+        .img-cta {
+          font-size: 12px;
+        }
+
+        .cta-btn {
+          padding: 12px 32px;
+        }
+      }
+    }
+  }
+}

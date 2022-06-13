@@ -1,4 +1,4 @@
-.section1 {
+.double-img-div {
   display: flex;
 
   .img-section {
@@ -42,6 +42,33 @@
         background-color: white;
         border: 1px solid white;
         border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  div.img-section:nth-child(2) { /* how to do with scss, update */
+    display: none;
+  }
+
+  .double-img-div {
+    .img-section {
+      .img-details {
+        left: 15px;
+        bottom: 33px;
+
+        .img-heading {
+          font-size: 30px;
+        }
+
+        .img-cta {
+          font-size: 12px;
+        }
+
+        .cta-btn {
+          padding: 12px 32px;
+        }
       }
     }
   }

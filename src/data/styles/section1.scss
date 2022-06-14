@@ -1,0 +1,19 @@
+.section1 {
+  .img-section {
+    .img-details {
+      .img-cta {
+        &:hover {
+          i {
+            transform: translate(32px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .section1 div.img-section:nth-child(2) { /* how to do with scss, update */
+    display: none;
+  }
+}

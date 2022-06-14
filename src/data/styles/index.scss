@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block; /* remove from here and only add to particular images where required */
+}
+
 .overlay {
   display: none;
   z-index: 0;

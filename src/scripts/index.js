@@ -4,10 +4,12 @@ import '../data/styles/common.scss';
 import '../data/styles/header.scss';
 import '../data/styles/doubleImgDiv.scss';
 import '../data/styles/section1.scss';
+import '../data/styles/section2.scss';
 import '../data/styles/section3.scss';
 
 import './header.js';
 import './section1.js';
+import './section2.js';
 
 (function() {
   var password = prompt('Password Please');

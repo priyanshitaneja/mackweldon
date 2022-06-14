@@ -18,7 +18,7 @@ nav {
   background: linear-gradient(0deg, #0000001a 0%, #000 100%);
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 
   /* inner shadow */
 
@@ -111,6 +111,7 @@ nav {
   position: absolute;
   top: 120px;
   background-color: white;
+  z-index: 9;
 
   ul {
     display: grid;
@@ -169,10 +170,10 @@ nav {
       display: none;
     }
   }
-}
 
-.is-opened {
-  display: block;
+  &.is-opened {
+    display: block;
+  }
 }
 
 .rotate-icon {
@@ -243,7 +244,7 @@ nav {
 
       &.active {
         display: flex;
-        z-index: 9;
+        z-index: 11;
       }
     }
 

@@ -18,7 +18,13 @@
       }
 
       .item-img {
-        width: 100%;
+        width: 305px;
+        height: 354px;
+        background: url("../assets/section2/featured.avif") no-repeat center center / contain;
+
+        &:hover {
+          background: url("../assets/section2/featuredHover.webp") no-repeat center center / cover;
+        }
       }
 
       .item-info {
@@ -41,7 +47,8 @@
 
   .scrollable {
     overflow-x: scroll;
-    scroll-behavior: smooth;
+
+    /* scroll-behavior: smooth; */
   }
 }
 

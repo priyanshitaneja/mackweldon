@@ -1,9 +1,8 @@
 .section2 {
-  padding: 64px 64px 32px;
-
   .category-content {
     display: flex;
     flex-direction: row;
+    padding: 64px 64px 32px;
 
     .category-item {
       min-width: 23.2%;
@@ -39,4 +38,16 @@
       }
     }
   }
+
+  .scrollable {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+  height: 0;
 }

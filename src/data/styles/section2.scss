@@ -36,7 +36,7 @@
   }
 
   .category-content {
-    padding: 64px 64px 32px;
+    padding: 64px;
 
     .category-item {
       min-width: 23.2%;
@@ -59,7 +59,9 @@
           center / contain;
 
         &:hover {
-          background: url("../assets/section2/featuredHover.png");
+          background:
+            url("../assets/section2/featuredHover.png") no-repeat center
+            center / contain;
         }
       }
 

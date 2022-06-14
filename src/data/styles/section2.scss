@@ -1,7 +1,41 @@
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: flex;
+  flex-direction: row;
+}
+
+.active[data-tab-target] {
+  font-weight: 600;
+  border-bottom: 2px solid #555;
+}
+
 .section2 {
-  .category-content {
+  padding-top: 64px;
+
+  .tabs {
     display: flex;
     flex-direction: row;
+    list-style: none;
+    margin-left: 64px;
+    margin-right: 64px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #555;
+    border-bottom: 1px solid #555;
+
+    li {
+      width: calc(100% - 128px);
+      padding-bottom: 13px;
+      text-align: center;
+    }
+  }
+
+  .category-content {
     padding: 64px 64px 32px;
 
     .category-item {

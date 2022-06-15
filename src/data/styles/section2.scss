@@ -56,10 +56,10 @@
 
       .item-img {
         width: 305px;
-        height: 354px;
+        height: 369px;
         background:
-          url("../assets/section2/featured.webp") no-repeat center
-          center / contain;
+          url("../assets/section2/featured.png") no-repeat center
+          center / cover;
 
         &:hover {
           background:
@@ -81,6 +81,7 @@
         .item-des {
           font-size: $font-md;
           margin-bottom: 4px;
+          line-height: 1.5rem;
         }
       }
     }

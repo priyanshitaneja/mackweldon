@@ -3,7 +3,7 @@
 header {
   background-color: $navy;
   color: $white;
-  font-size: 10px;
+  font-size: $font-xs;
   text-align: center;
   height: 38px;
   line-height: 38px;
@@ -48,7 +48,7 @@ nav {
 
   .navbar-left,
   .navbar-right {
-    font-size: 13px;
+    font-size: $font-s;
     line-height: 77px;
     height: 100%;
   }
@@ -79,7 +79,7 @@ nav {
         position: absolute;
         top: -5px;
         right: 5px;
-        font-size: 10px;
+        font-size: $font-xs;
       }
     }
   }
@@ -139,13 +139,13 @@ nav {
       }
 
       p {
-        font-size: 14px;
+        font-size: $font-md;
         font-weight: 600;
         margin-bottom: 5px;
       }
 
       span {
-        font-size: 10px;
+        font-size: $font-xs;
         display: block;
 
         /* remove display block and update */
@@ -156,7 +156,7 @@ nav {
       border-right: 1px solid $light-grey;
       padding-right: 40px;
       color: $grey;
-      font-size: 14px;
+      font-size: $font-md;
 
       p {
         line-height: 1.5;
@@ -321,7 +321,7 @@ nav {
       }
 
       .mob-text {
-        font-size: 14px;
+        font-size: $font-md;
 
         p {
           color: $grey;

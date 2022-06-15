@@ -25,7 +25,7 @@
     margin-right: 64px;
     margin-bottom: 40px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: $font-xl;
     font-weight: 400;
     line-height: 2rem;
     color: $grey;
@@ -74,12 +74,12 @@
         color: $grey;
 
         .item-heading {
-          font-size: 16px;
+          font-size: $font-lg;
           margin-bottom: 8px;
         }
 
         .item-des {
-          font-size: 14px;
+          font-size: $font-md;
           margin-bottom: 4px;
         }
       }
@@ -103,7 +103,7 @@
 @media screen and (max-width: 639px) {
   .section2 {
     .tabs {
-      font-size: 14px;
+      font-size: $font-md;
       margin-bottom: 24px;
       margin-left: 16px;
       margin-right: 16px;
@@ -134,12 +134,12 @@
           color: $grey;
 
           .item-heading {
-            font-size: 14px;
+            font-size: $font-md;
             margin-bottom: 8px;
           }
 
           .item-des {
-            font-size: 12px;
+            font-size: $font-sm;
             margin-bottom: 4px;
           }
         }

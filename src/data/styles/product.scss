@@ -20,7 +20,7 @@
 
     .quick-add {
       text-align: center;
-      font-size: 0.75rem;
+      font-size: $font-sm;
       background-color: $white-translucent;
       line-height: 32px;
       position: absolute;
@@ -103,7 +103,7 @@
       }
 
       span {
-        font-size: 13px;
+        font-size: $font-s;
       }
     }
 
@@ -139,7 +139,7 @@
 
     .product-name {
       line-height: 1.5rem;
-      font-size: 16px;
+      font-size: $font-lg;
     }
   }
 }
@@ -156,14 +156,14 @@
           opacity: 1;
 
           i {
-            font-size: 16px;
+            font-size: $font-lg;
             width: 16px;
           }
         }
       }
 
       .product-name {
-        font-size: 14px;
+        font-size: $font-md;
         margin-bottom: 2px;
       }
 

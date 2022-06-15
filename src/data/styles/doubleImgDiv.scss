@@ -18,16 +18,16 @@
       color: $white;
 
       .img-heading {
-        font-size: 42px;
+        font-size: $font-3xl;
       }
 
       .img-description {
-        font-size: 16px;
+        font-size: $font-lg;
         padding: 5px 0;
       }
 
       .img-cta {
-        font-size: 16px;
+        font-size: $font-lg;
         background: none;
         border: none;
         margin-top: 16px;
@@ -55,11 +55,11 @@
         bottom: 33px;
 
         .img-heading {
-          font-size: 30px;
+          font-size: $font-2xl;
         }
 
         .img-cta {
-          font-size: 12px;
+          font-size: $font-sm;
         }
 
         .cta-btn {

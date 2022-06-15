@@ -1,0 +1,23 @@
+footer {
+  height: 100px;
+  padding: 44px 0 32px;
+  background-color: #283546;
+  border-top: 4px solid #2b9dd6;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+
+  i {
+    color: white;
+    width: 3%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  footer {
+    i {
+      width: 10%;
+    }
+  }
+}

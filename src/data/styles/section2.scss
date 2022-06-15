@@ -90,13 +90,8 @@
       color: #555;
       background-color: #f7f7f7;
 
-      .product-img {
-        width: 305px;
-        height: 354px;
+      @mixin product-img {
         position: relative;
-        background:
-          url("../assets/section2/product.png") no-repeat center
-          center / contain;
 
         .quick-add {
           text-align: center;
@@ -130,10 +125,6 @@
         }
 
         &:hover {
-          background:
-            url("../assets/section2/mockup.png") no-repeat center
-            center / cover;
-
           .product-sizes {
             opacity: 1;
           }
@@ -141,6 +132,38 @@
           .quick-add {
             opacity: 1;
           }
+        }
+      }
+
+      .bestseller-img {
+        @include product-img;
+
+        width: 305px;
+        height: 354px;
+        background:
+          url("../assets/section2/product.png") no-repeat center
+          center / contain;
+
+        &:hover {
+          background:
+            url("../assets/section2/mockup.png") no-repeat center
+            center / cover;
+        }
+      }
+
+      .new-arrival-img {
+        @include product-img;
+
+        width: 305px;
+        height: 354px;
+        background:
+          url("../assets/section2/new-product.png") no-repeat center
+          center / contain;
+
+        &:hover {
+          background:
+            url("../assets/section2/new-mockup.png") no-repeat center
+            center / cover;
         }
       }
 

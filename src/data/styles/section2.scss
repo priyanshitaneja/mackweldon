@@ -90,6 +90,14 @@
       color: #555;
       background-color: #f7f7f7;
 
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
       @mixin product-img {
         position: relative;
 
@@ -157,12 +165,12 @@
         width: 305px;
         height: 354px;
         background:
-          url("../assets/section2/new-product.png") no-repeat center
+          url("../assets/section2/newProduct.png") no-repeat center
           center / contain;
 
         &:hover {
           background:
-            url("../assets/section2/new-mockup.png") no-repeat center
+            url("../assets/section2/newMockup.png") no-repeat center
             center / cover;
         }
       }

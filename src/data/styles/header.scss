@@ -70,6 +70,15 @@ nav {
     .quantity {
       color: #0074b8;
       opacity: 1;
+      position: relative;
+
+      i {
+        color: white;
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        font-size: 10px;
+      }
     }
   }
 

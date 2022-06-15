@@ -21,6 +21,7 @@
     list-style: none;
     margin-left: 64px;
     margin-right: 64px;
+    margin-bottom: 40px;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: 400;
@@ -36,7 +37,7 @@
   }
 
   .category-content {
-    padding: 64px;
+    padding: 0 64px 64px;
 
     .category-item {
       min-width: 23.2%;
@@ -89,43 +90,62 @@
       color: #555;
       background-color: #f7f7f7;
 
-      .product-sizes {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        line-height: 40px;
-
-        li {
-          width: 15%;
-          text-align: center;
-        }
-      }
-
       .product-img {
         width: 305px;
         height: 354px;
+        position: relative;
         background:
           url("../assets/section2/product.png") no-repeat center
           center / contain;
+
+        .quick-add {
+          text-align: center;
+          font-size: 0.75rem;
+          background-color: #fffc;
+          line-height: 32px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 40px;
+          opacity: 0;
+        }
+
+        .product-sizes {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          line-height: 40px;
+          background-color: white;
+          opacity: 0;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+
+          li {
+            width: 15%;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
 
         &:hover {
           background:
             url("../assets/section2/mockup.png") no-repeat center
             center / cover;
+
+          .product-sizes {
+            opacity: 1;
+          }
+
+          .quick-add {
+            opacity: 1;
+          }
         }
       }
 
       .product-info {
         padding: 10px 16px 12px;
-
-        .product-colors {
-          line-height: 30px;
-        }
-
-        .product-name {
-          line-height: 1.5rem;
-          font-size: 16px;
-        }
 
         .product-rating {
           margin-bottom: 4px;
@@ -137,6 +157,41 @@
           span {
             font-size: 13px;
           }
+        }
+
+        .product-colors {
+          line-height: 30px;
+          position: relative;
+
+          .colors-count {
+            opacity: 1;
+          }
+
+          .colors-list {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+
+            i {
+              width: 30px;
+            }
+          }
+
+          &:hover {
+            .colors-count {
+              opacity: 0;
+            }
+
+            .colors-list {
+              opacity: 1;
+            }
+          }
+        }
+
+        .product-name {
+          line-height: 1.5rem;
+          font-size: 16px;
         }
       }
     }

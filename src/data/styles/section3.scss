@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .section3 {
   .img-section {
     .img-details {
@@ -26,19 +28,19 @@
       z-index: 1;
       left: 64px;
       bottom: 64px;
-      color: grey;
+      color: $grey;
 
       .img-heading {
-        font-size: 42px;
+        font-size: $font-3xl;
       }
 
       .img-description {
-        font-size: 16px;
+        font-size: $font-lg;
         padding: 5px 0;
       }
 
       .img-cta {
-        font-size: 16px;
+        font-size: $font-lg;
         background: none;
         border: none;
         margin-top: 16px;
@@ -71,18 +73,18 @@
         padding: 16px 16px 32px;
 
         .img-heading {
-          font-size: 24px;
+          font-size: $font-xl;
         }
 
         .img-description {
-          font-size: 14px;
+          font-size: $font-md;
           line-height: 1.5;
         }
 
         .img-cta {
           visibility: visible;
-          color: blue;
-          font-size: 12px;
+          color: $cobalt-blue;
+          font-size: $font-sm;
           margin-top: 5px;
         }
       }
@@ -94,14 +96,14 @@
       .img-section {
         .img-details {
           .img-description {
-            font-size: 14px;
+            font-size: $font-md;
             padding: 5px 0;
           }
 
           .img-cta {
             visibility: visible;
             margin-top: 2px;
-            font-size: 12px;
+            font-size: $font-sm;
           }
         }
       }

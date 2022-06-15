@@ -7,6 +7,7 @@ header {
   text-align: center;
   height: 38px;
   line-height: 38px;
+  letter-spacing: 0.2px;
 }
 
 nav {
@@ -51,6 +52,7 @@ nav {
     font-size: $font-s;
     line-height: 77px;
     height: 100%;
+    align-items: center;
   }
 
   .navbar-left {
@@ -68,11 +70,27 @@ nav {
     width: 22%;
     display: flex;
     justify-content: space-between;
+    letter-spacing: 0.2px;
+
+    .search {
+      i {
+        font-size: 13px;
+        margin-right: 6.5px;
+      }
+    }
+
+    .user-name {
+      i {
+        font-size: $font-sm;
+        margin-right: 7px;
+      }
+    }
 
     .quantity {
       color: $cobalt-blue;
       opacity: 1;
       position: relative;
+      font-size: 19px;
 
       i {
         color: $white;

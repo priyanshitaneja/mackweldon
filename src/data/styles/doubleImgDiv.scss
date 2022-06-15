@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .double-img-div {
   display: flex;
 
@@ -13,19 +15,19 @@
       position: absolute;
       left: 64px;
       bottom: 64px;
-      color: white;
+      color: $white;
 
       .img-heading {
-        font-size: 42px;
+        font-size: $font-3xl;
       }
 
       .img-description {
-        font-size: 16px;
+        font-size: $font-lg;
         padding: 5px 0;
       }
 
       .img-cta {
-        font-size: 16px;
+        font-size: $font-lg;
         background: none;
         border: none;
         margin-top: 16px;
@@ -36,9 +38,9 @@
 
       .cta-btn {
         padding: 15px 56px;
-        color: grey;
-        background-color: white;
-        border: 1px solid white;
+        color: $grey;
+        background-color: $white;
+        border: 1px solid $white;
         border-radius: 5px;
       }
     }
@@ -53,11 +55,11 @@
         bottom: 33px;
 
         .img-heading {
-          font-size: 30px;
+          font-size: $font-2xl;
         }
 
         .img-cta {
-          font-size: 12px;
+          font-size: $font-sm;
         }
 
         .cta-btn {

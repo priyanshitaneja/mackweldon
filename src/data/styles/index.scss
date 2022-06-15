@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000000b3;
+  background-color: $overlay;
 
   &.active {
     display: flex;

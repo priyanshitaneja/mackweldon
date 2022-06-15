@@ -9,16 +9,19 @@
     img {
       width: 100%;
       z-index: -1;
+      min-height: 21.3125rem;
+      max-height: 39.8125rem;
     }
 
     .img-details {
       position: absolute;
-      left: 64px;
-      bottom: 64px;
+      left: 4rem;
+      bottom: 4rem;
       color: $white;
 
       .img-heading {
-        font-size: $font-3xl;
+        font-size: 48px;
+        letter-spacing: -0.0625rem;
       }
 
       .img-description {
@@ -27,6 +30,7 @@
       }
 
       .img-cta {
+        font-family: $lato;
         font-size: $font-lg;
         background: none;
         border: none;
@@ -40,8 +44,9 @@
         padding: 15px 56px;
         color: $grey;
         background-color: $white;
-        border: 1px solid $white;
+        border: 0;
         border-radius: 5px;
+        line-height: 16px;
       }
     }
   }

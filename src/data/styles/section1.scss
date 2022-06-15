@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .section1 {
   .img-section {
     .img-details {
@@ -6,6 +8,21 @@
           i {
             transform: translate(32px);
           }
+        }
+      }
+    }
+
+    &:last-child {
+      .img-details {
+        bottom: 3.125rem;
+
+        .img-heading {
+          font-size: 36px;
+          letter-spacing: -1px;
+        }
+
+        .img-cta {
+          line-height: 1.6;
         }
       }
     }

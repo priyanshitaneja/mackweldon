@@ -36,10 +36,12 @@ nav {
   ul {
     list-style-type: none;
     cursor: pointer;
+    height: 100%;
 
     li {
       display: inline;
       color: inherit;
+      height: 100%;
 
       &:hover {
         border-bottom: 4px solid $grey;
@@ -51,18 +53,20 @@ nav {
   .navbar-right {
     font-size: $font-s;
     line-height: 77px;
-    height: 100%;
     align-items: center;
   }
 
   .navbar-left {
     width: 22%;
     display: flex;
-    justify-content: space-between;
-    padding-right: 10%;
+    justify-content: flex-start;
 
     i:hover {
       transform: rotate(-180deg);
+    }
+
+    .nav-stories {
+      margin-left: 51px;
     }
   }
 
@@ -91,12 +95,13 @@ nav {
       opacity: 1;
       position: relative;
       font-size: 19px;
+      margin-left: 9px;
 
       i {
         color: $white;
         position: absolute;
         top: -5px;
-        right: 5px;
+        left: 33%;
         font-size: $font-xs;
       }
     }

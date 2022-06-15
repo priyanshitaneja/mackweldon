@@ -90,6 +90,14 @@
       color: #555;
       background-color: #f7f7f7;
 
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
       @mixin product-img {
         position: relative;
 
@@ -101,7 +109,7 @@
           position: absolute;
           left: 0;
           right: 0;
-          bottom: 40px;
+          bottom: 38px;
           opacity: 0;
         }
 
@@ -113,7 +121,7 @@
           background-color: white;
           opacity: 0;
           position: absolute;
-          bottom: 0;
+          bottom: -1px;
           left: 0;
           right: 0;
 
@@ -157,12 +165,12 @@
         width: 305px;
         height: 354px;
         background:
-          url("../assets/section2/new-product.png") no-repeat center
+          url("../assets/section2/newProduct.png") no-repeat center
           center / contain;
 
         &:hover {
           background:
-            url("../assets/section2/new-mockup.png") no-repeat center
+            url("../assets/section2/newMockup.png") no-repeat center
             center / cover;
         }
       }
@@ -276,6 +284,17 @@
             font-size: 12px;
             margin-bottom: 4px;
           }
+        }
+      }
+
+      .product {
+        min-width: 76.05%;
+        width: 76.05; /* confirm if needed */
+        margin: 0 8px;
+
+        .product-img {
+          width: 100%;
+          background-size: cover;
         }
       }
     }

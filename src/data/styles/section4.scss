@@ -1,5 +1,7 @@
+@import "./variables.scss";
+
 .section4 {
-  color: #555;
+  color: $grey;
 
   h2 {
     font-size: 30px;
@@ -29,7 +31,7 @@
       .product-info {
         .product-price {
           .sale-price {
-            color: blue;
+            color: $cobalt-blue;
           }
 
           .mrp {

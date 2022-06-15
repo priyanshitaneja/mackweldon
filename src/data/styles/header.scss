@@ -1,6 +1,8 @@
+@import "./variables.scss";
+
 header {
-  background-color: #283546;
-  color: white;
+  background-color: $navy;
+  color: $white;
   font-size: 10px;
   text-align: center;
   height: 38px;
@@ -14,8 +16,8 @@ nav {
   padding-left: 64px;
   padding-right: 64px;
   align-items: center;
-  color: white;
-  background: linear-gradient(0deg, #0000001a 0%, #000 100%);
+  color: $white;
+  background: $navbar-gradient;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -39,7 +41,7 @@ nav {
       color: inherit;
 
       &:hover {
-        border-bottom: 4px solid grey;
+        border-bottom: 4px solid $grey;
       }
     }
   }
@@ -68,12 +70,12 @@ nav {
     justify-content: space-between;
 
     .quantity {
-      color: #0074b8;
+      color: $cobalt-blue;
       opacity: 1;
       position: relative;
 
       i {
-        color: white;
+        color: $white;
         position: absolute;
         top: -5px;
         right: 5px;
@@ -93,33 +95,33 @@ nav {
     }
 
     .brand-name {
-      color: white;
+      color: $white;
       padding-top: 10px;
     }
   }
 
   &:hover {
-    background-color: white;
+    background-color: $white;
     background-image: none;
-    color: black;
+    color: $black;
 
     .logo {
       background: url("../assets/header/logo-black.png") no-repeat center;
     }
 
     .brand-name {
-      color: #000;
+      color: $black;
     }
   }
 }
 
 .stories-dropdown {
   padding: 30px 85px;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $light-grey;
   display: none;
   position: absolute;
   top: 120px;
-  background-color: white;
+  background-color: $white;
   z-index: 9;
 
   ul {
@@ -128,7 +130,7 @@ nav {
     list-style: none;
 
     a {
-      color: grey;
+      color: $grey;
       text-align: center;
 
       img {
@@ -151,9 +153,9 @@ nav {
     }
 
     .stories-info {
-      border-right: 1px solid #d9d9d9;
+      border-right: 1px solid $light-grey;
       padding-right: 40px;
-      color: grey;
+      color: $grey;
       font-size: 14px;
 
       p {
@@ -190,7 +192,7 @@ nav {
 }
 
 .nav-white-bg {
-  background-color: #fff;
+  background-color: $white;
   background-image: none;
 }
 
@@ -241,8 +243,8 @@ nav {
       position: fixed;
       left: 0;
       top: 0;
-      background-color: white;
-      color: black;
+      background-color: $white;
+      color: $black;
       height: 100vh;
       width: 300px;
       padding: 15px;
@@ -322,12 +324,12 @@ nav {
         font-size: 14px;
 
         p {
-          color: grey;
+          color: $grey;
           text-align: left;
         }
 
         a {
-          color: #0073ff;
+          color: $cobalt-blue;
         }
       }
     }

@@ -26,7 +26,7 @@
       z-index: 1;
       left: 64px;
       bottom: 64px;
-      color: grey;
+      color: $grey;
 
       .img-heading {
         font-size: 42px;
@@ -81,7 +81,7 @@
 
         .img-cta {
           visibility: visible;
-          color: blue;
+          color: $cobalt-blue;
           font-size: 12px;
           margin-top: 5px;
         }

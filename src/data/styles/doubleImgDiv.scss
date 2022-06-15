@@ -13,7 +13,7 @@
       position: absolute;
       left: 64px;
       bottom: 64px;
-      color: white;
+      color: $white;
 
       .img-heading {
         font-size: 42px;
@@ -36,9 +36,9 @@
 
       .cta-btn {
         padding: 15px 56px;
-        color: grey;
-        background-color: white;
-        border: 1px solid white;
+        color: $grey;
+        background-color: $white;
+        border: 1px solid $white;
         border-radius: 5px;
       }
     }

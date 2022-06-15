@@ -2,8 +2,8 @@
   min-width: 23.2%;
   width: 23.2%; /* confirm if needed */
   margin: 0 16px;
-  color: #555;
-  background-color: #f7f7f7;
+  color: $grey;
+  background-color: $white-smoke;
 
   &:first-child {
     margin-left: 0;
@@ -19,7 +19,7 @@
     .quick-add {
       text-align: center;
       font-size: 0.75rem;
-      background-color: #fffc;
+      background-color: $white-translucent;
       line-height: 32px;
       position: absolute;
       left: 0;
@@ -33,7 +33,7 @@
       display: flex;
       justify-content: center;
       line-height: 40px;
-      background-color: white;
+      background-color: $white;
       opacity: 0;
       position: absolute;
       bottom: -1px;
@@ -97,7 +97,7 @@
       margin-bottom: 4px;
 
       i {
-        color: #0074b8;
+        color: $cobalt-blue;
       }
 
       span {

@@ -16,7 +16,7 @@ img {
 }
 
 .overlay {
-  opacity: 0;
+  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -27,6 +27,6 @@ img {
   transition: ease-out 1s;
 
   &.active {
-    opacity: 1;
+    display: block;
   }
 }

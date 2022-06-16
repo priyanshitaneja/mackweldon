@@ -250,7 +250,7 @@ nav {
 
 /* responsive */
 
-@media (max-width: 1170px) {
+@media screen and (max-width: 1170px) {
   header {
     height: 28px;
     line-height: 28px;
@@ -334,15 +334,7 @@ nav {
       }
 
       .search {
-        span {
-          display: none;
-        }
-      }
-
-      .cart {
-        span {
-          display: none;
-        }
+        display: none;
       }
     }
   }
@@ -386,6 +378,18 @@ nav {
 
         a {
           color: $cobalt-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    .navbar-right {
+      .cart {
+        span {
+          display: none;
         }
       }
     }

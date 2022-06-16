@@ -56,7 +56,8 @@
 
       .item-img {
         width: 305px;
-        height: 369px;
+        max-height: 369px;
+        min-height: 367px;
         background:
           url("../assets/section2/featured.png") no-repeat center
           center / cover;
@@ -101,10 +102,47 @@
   height: 0;
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 1340px) {
+  .section2 {
+    .category-content {
+      .category-item {
+        .item-img {
+          width: unset;
+          min-height: 330px;
+          background-size: cover;
+        }
+      }
+    }
+
+    .product {
+      min-width: 28.11%;
+      margin: 0 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .product-img {
+        width: 100%;
+        background-size: cover;
+
+        &.bestseller-img,
+        &.new-arrival-img {
+          height: 265px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .section2 {
     .tabs {
-      font-size: $font-md;
+      font-size: 0.875rem;
       margin-bottom: 24px;
       margin-left: 16px;
       margin-right: 16px;
@@ -116,22 +154,23 @@
 
     .category-content {
       padding: 0 16px 32px;
+      min-height: fit-content;
 
       .category-item {
         min-width: 76.05%;
-        width: 76.05; /* confirm if needed */
+        height: 87.87vw;
         margin: 0 8px;
-        background-size: 100%;
 
         .item-img {
           width: 100%;
-          background-size: contain;
+          min-height: 90%;
+          background-size: cover;
           background-position-x: left;
         }
 
         .item-info {
           line-height: 1.5;
-          padding: 0;
+          padding: 10px 0 0;
           color: $grey;
 
           .item-heading {
@@ -161,8 +200,18 @@
 
         .product-img {
           width: 100%;
-          background-size: cover;
+          background-size: contain;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .section2 {
+    .category-content {
+      &#featured {
+        min-height: 110vw;
       }
     }
   }

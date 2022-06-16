@@ -78,7 +78,8 @@ dropdown.addEventListener('mouseout', () => {
 });
 
 hamburgerMenu.addEventListener('click', () => {
-  navbarLeft.classList.toggle('active');
+  navbarLeft.classList.remove('close');
+  navbarLeft.classList.add('active', 'open');
   overlay.classList.add('active');
 
   if (navbarLeft.classList.contains('active'))
@@ -86,8 +87,13 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 overlay.addEventListener('click', () => {
-  navbarLeft.classList.remove('active');
-  overlay.classList.remove('active');
+  navbarLeft.classList.remove('open');
+  navbarLeft.classList.add('close');
+  setTimeout(() => {
+    overlay.classList.remove('active');
+    navbarLeft.classList.remove('active');
+  }, 500);
+  
   dropdownValue.classList.remove('stories-mob', 'is-opened');
   arrow.classList.remove('rotate-icon');
 });

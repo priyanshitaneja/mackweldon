@@ -6,8 +6,61 @@ const hamburgerMenu = document.querySelector('nav .menu');
 const navbarLeft = document.querySelector('nav .navbar-left');
 const overlay = document.querySelector('.overlay');
 
-dropdown.addEventListener('mouseover', () => { // add foreach func and do this for click as well
-  if(!arrow.classList.contains('rotate-icon'))
+let pageScrollingDown = false;
+let pageScrollingUp = false;
+
+let oldValue = 0;
+let newValue = 0;
+
+document.addEventListener('scroll', () => {
+  // checking scroll direction
+  newValue = window.pageYOffset;
+
+  if (oldValue < newValue) {
+    pageScrollingDown = true;
+    pageScrollingUp = false;
+  } else if (oldValue > newValue) {
+    pageScrollingDown = false;
+    pageScrollingUp = true;
+  }
+
+  oldValue = newValue;
+
+  // updating nav position/styling
+  if (pageScrollingDown) {
+    if (
+      (document.body.scrollTop > 38 ||
+        document.documentElement.scrollTop > 38) &&
+      (document.body.scrollTop < 200 ||
+        document.documentElement.scrollTop < 200)
+    ) {
+      nav.classList.add('sticky');
+    }
+    if (
+      (document.body.scrollTop > 200 ||
+        document.documentElement.scrollTop > 200) &&
+      nav.classList.contains('sticky')
+    ) {
+      nav.classList.remove('sticky');
+    }
+  } else if (pageScrollingUp) {
+    if (
+      document.body.scrollTop < 38 ||
+      document.documentElement.scrollTop < 38
+    ) {
+      console.log(
+        document.documentElement.scrollTop,
+        document.querySelector('header').bottom,
+      );
+      nav.classList.remove('sticky');
+      // nav.style.top = 28 + document.documentElement.scrollTop;
+    }
+  }
+});
+
+dropdown.addEventListener('mouseover', () => {
+  // add foreach func and do this for click as well
+  if (!arrow.classList.contains('rotate-icon'))
     arrow.classList.add('rotate-icon');
 
   if (!dropdownValue.classList.contains('is-opened')) {
@@ -24,28 +77,11 @@ dropdown.addEventListener('mouseout', () => {
   }
 });
 
-document.addEventListener('scroll', () => {
-  if (
-    (document.body.scrollTop > 38 || document.documentElement.scrollTop > 38) &&
-    (document.body.scrollTop < 200 || document.documentElement.scrollTop < 200)
-  ) {
-    nav.classList.add('sticky');
-  }
-  if (
-    (document.body.scrollTop > 200 ||
-      document.documentElement.scrollTop > 200) &&
-    nav.classList.contains('sticky')
-  ) {
-    nav.classList.remove('sticky');
-    nav.classList.add('transition');
-  }
-});
-
 hamburgerMenu.addEventListener('click', () => {
   navbarLeft.classList.toggle('active');
   overlay.classList.add('active');
 
-  if(navbarLeft.classList.contains('active'))
+  if (navbarLeft.classList.contains('active'))
     dropdownValue.classList.add('stories-mob');
 });
 

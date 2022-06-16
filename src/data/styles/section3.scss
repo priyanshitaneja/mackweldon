@@ -3,6 +3,15 @@
 .section3 {
   .img-section {
     .img-details {
+      .img-heading {
+        font-size: 2.25rem;
+      }
+
+      .img-description {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
       .img-cta {
         visibility: hidden;
       }
@@ -27,23 +36,30 @@
       position: absolute;
       z-index: 1;
       left: 64px;
-      bottom: 64px;
+      bottom: 50px;
       color: $grey;
 
       .img-heading {
         font-size: $font-3xl;
+        line-height: 56px;
+        letter-spacing: -1px;
+        margin-bottom: 8px;
       }
 
       .img-description {
-        font-size: $font-lg;
-        padding: 5px 0;
+        font-size: 1rem;
+        max-width: 640px;
+        line-height: 32px;
       }
 
       .img-cta {
-        font-size: $font-lg;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.2;
         background: none;
         border: none;
-        margin-top: 16px;
+        margin-top: 6px;
+        padding: 14px 0;
         color: inherit;
         cursor: pointer;
         visibility: hidden;
@@ -58,7 +74,38 @@
   }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 1024px) {
+  .section3 {
+    .img-fullwidth {
+      .img-details {
+        left: 32px;
+        right: 32px;
+        bottom: 0;
+      }
+    }
+
+    .double-img-div {
+      flex-direction: column;
+
+      .img-section {
+        .img-details {
+          .img-description {
+            font-size: $font-md;
+            padding: 5px 0;
+          }
+
+          .img-cta {
+            visibility: visible;
+            margin-top: 2px;
+            font-size: $font-sm;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .section3 {
     .img-fullwidth {
       img {
@@ -86,25 +133,6 @@
           color: $cobalt-blue;
           font-size: $font-sm;
           margin-top: 5px;
-        }
-      }
-    }
-
-    .double-img-div {
-      flex-direction: column;
-
-      .img-section {
-        .img-details {
-          .img-description {
-            font-size: $font-md;
-            padding: 5px 0;
-          }
-
-          .img-cta {
-            visibility: visible;
-            margin-top: 2px;
-            font-size: $font-sm;
-          }
         }
       }
     }

@@ -3,12 +3,12 @@
 footer {
   height: 100px;
   padding: 44px 0 32px;
-  background-color: $navy;
   border-top: 4px solid $cobalt-blue;
+  background-color: $navy;
   display: flex;
-  text-align: center;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 
   i {
     color: $white;

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: $montserrat;
 }
 
 a {
@@ -17,15 +17,16 @@ img {
 
 .overlay {
   display: none;
-  z-index: 9;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 9;
   background-color: $overlay;
+  transition: ease-out 1s;
 
   &.active {
-    display: flex;
+    display: block;
   }
 }

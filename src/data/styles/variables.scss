@@ -24,3 +24,30 @@ $font-lg: 16px;
 $font-xl: 24px;
 $font-2xl: 30px;
 $font-3xl: 42px;
+
+/* Font family */
+
+$montserrat: montserrat, arial, sans-serif;
+$lato: lato, sans-serif;
+
+/* animations */
+
+@keyframes slide-in {
+  from {
+    left: -300px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -300px;
+  }
+}

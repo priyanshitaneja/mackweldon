@@ -48,10 +48,6 @@ document.addEventListener('scroll', () => {
       document.body.scrollTop < 38 ||
       document.documentElement.scrollTop < 38
     ) {
-      console.log(
-        document.documentElement.scrollTop,
-        document.querySelector('header').bottom,
-      );
       nav.classList.remove('sticky');
       // nav.style.top = 28 + document.documentElement.scrollTop;
     }
@@ -59,7 +55,6 @@ document.addEventListener('scroll', () => {
 });
 
 dropdown.addEventListener('mouseover', () => {
-  // add foreach func and do this for click as well
   if (!arrow.classList.contains('rotate-icon'))
     arrow.classList.add('rotate-icon');
 

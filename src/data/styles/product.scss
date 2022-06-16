@@ -19,10 +19,10 @@
     position: relative;
 
     .quick-add {
-      text-align: center;
       font-size: $font-sm;
-      background-color: $white-translucent;
       line-height: 32px;
+      text-align: center;
+      background-color: $white-translucent;
       position: absolute;
       left: 0;
       right: 0;
@@ -64,7 +64,7 @@
     @include product-img;
 
     width: 305px;
-    height: 354px;
+    height: 367px;
     background:
       url("../assets/section2/product.png") no-repeat center
       center / contain;
@@ -97,9 +97,12 @@
 
     .product-rating {
       margin-bottom: 4px;
+      line-height: 17px;
 
       i {
         color: $cobalt-blue;
+        font-size: $font-sm;
+        width: $font-sm;
       }
 
       span {
@@ -108,11 +111,14 @@
     }
 
     .product-colors {
-      line-height: 30px;
+      line-height: 1rem; /* 0.5 */
       position: relative;
+      margin-bottom: 5px;
 
       .colors-count {
         opacity: 1;
+        font-size: 0.75rem;
+        letter-spacing: 0;
       }
 
       .colors-list {
@@ -138,8 +144,12 @@
     }
 
     .product-name {
-      line-height: 1.5rem;
-      font-size: $font-lg;
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+
+    .product-price {
+      margin-top: 10px;
     }
   }
 }

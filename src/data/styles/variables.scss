@@ -29,3 +29,25 @@ $font-3xl: 42px;
 
 $montserrat: montserrat, arial, sans-serif;
 $lato: lato, sans-serif;
+
+/* animations */
+
+@keyframes slide-in {
+  from {
+    left: -300px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -300px;
+  }
+}

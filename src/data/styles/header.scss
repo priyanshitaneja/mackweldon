@@ -266,23 +266,10 @@ nav {
       width: 22%;
     }
 
-    ul {
-      li {
-        &:hover {
-          border-bottom: 0;
-        }
-      }
-    }
-
-    .navbar-left,
-    .navbar-right {
-      line-height: 40px;
-    }
-
     .navbar-left {
       display: none;
       flex-direction: column;
-      justify-content: flex-start;
+      align-items: flex-start;
       position: fixed;
       left: 0;
       top: 0;
@@ -292,13 +279,29 @@ nav {
       width: 300px;
       padding: 15px;
 
-      .li {
+      li {
         padding: 10px 0;
+        height: fit-content;
+      }
+
+      .nav-stories {
+        margin-left: 0;
       }
 
       &.active {
         display: flex;
         z-index: 11;
+      }
+    }
+
+    .navbar-left,
+    .navbar-right {
+      line-height: 40px;
+
+      li {
+        &:hover {
+          border-bottom: 0;
+        }
       }
     }
 

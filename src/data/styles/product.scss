@@ -117,7 +117,7 @@
 
       .colors-count {
         opacity: 1;
-        font-size: 0.75rem;
+        font-size: $font-sm;
         letter-spacing: 0;
       }
 
@@ -144,7 +144,7 @@
     }
 
     .product-name {
-      font-size: 1rem;
+      font-size: $font-lg;
       line-height: 1.6rem;
     }
 
@@ -157,7 +157,7 @@
 @media screen and (max-width: 1024px) {
   .section2 {
     .tabs {
-      font-size: 0.875rem;
+      font-size: $font-md;
       margin: 0 32px 40px;
     }
 

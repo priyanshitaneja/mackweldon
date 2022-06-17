@@ -24,7 +24,6 @@
     margin-left: 64px;
     margin-right: 64px;
     margin-bottom: 40px;
-    cursor: pointer;
     font-size: $font-xl;
     font-weight: 400;
     line-height: 2rem;
@@ -142,7 +141,7 @@
 @media screen and (max-width: 767px) {
   .section2 {
     .tabs {
-      font-size: 0.875rem;
+      font-size: $font-md;
       margin-bottom: 24px;
       margin-left: 16px;
       margin-right: 16px;

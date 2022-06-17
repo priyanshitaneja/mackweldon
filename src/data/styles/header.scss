@@ -35,7 +35,6 @@ nav {
 
   ul {
     list-style-type: none;
-    cursor: pointer;
     height: 100%;
 
     li {
@@ -110,7 +109,6 @@ nav {
   .brand-info {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
 
     .logo {
       height: 26px;
@@ -196,7 +194,7 @@ nav {
       div {
         margin-bottom: 20px;
         max-width: 13.3125rem;
-        font-size: 0.875rem;
+        font-size: $font-md;
         line-height: 1.5rem;
       }
 

@@ -36,7 +36,6 @@
         background: none;
         margin-top: 16px;
         border: none;
-        cursor: pointer;
         transition: transform 0.001s linear !important;
       }
 
@@ -56,7 +55,7 @@
   .double-img-div {
     .img-section {
       img {
-        height: 60vh;
+        min-height: 60vh;
         object-fit: cover;
       }
 

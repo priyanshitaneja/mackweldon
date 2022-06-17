@@ -16,14 +16,15 @@ $navbar-gradient: linear-gradient(0deg, #0000001a 0%, #000 100%);
 
 /* font sizes */
 
-$font-xs: 10px;
-$font-sm: 12px;
-$font-s: 13px; /* name better */
-$font-md: 14px;
-$font-lg: 16px;
-$font-xl: 24px;
-$font-2xl: 30px;
-$font-3xl: 42px;
+$font-xs: 0.625rem; /* 10px */
+$font-sm: 0.75rem; /* 12px */
+$font-s: 0.813rem; /* 13px */
+$font-md: 0.875rem; /* 14px */
+$font-lg: 1rem; /* 16px */
+$font-xl: 1.5rem; /* 24px */
+$font-2xl: 1.875rem; /* 30px */
+$font-3xl: 2.625rem; /* 42px */
+$font-48: 3rem; /* 48px */
 
 /* Font family */
 

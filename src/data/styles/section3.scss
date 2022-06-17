@@ -8,7 +8,7 @@
       }
 
       .img-description {
-        font-size: 1rem;
+        font-size: $font-lg;
         font-weight: 600;
       }
 
@@ -47,13 +47,13 @@
       }
 
       .img-description {
-        font-size: 1rem;
+        font-size: $font-lg;
         max-width: 640px;
         line-height: 32px;
       }
 
       .img-cta {
-        font-size: 0.875rem;
+        font-size: $font-md;
         font-weight: 600;
         letter-spacing: 0.2;
         background: none;
@@ -61,7 +61,6 @@
         margin-top: 6px;
         padding: 14px 0;
         color: inherit;
-        cursor: pointer;
         visibility: hidden;
       }
     }

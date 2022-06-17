@@ -3,10 +3,10 @@
 header {
   background-color: $navy;
   color: $white;
-  font-size: $font-xs;
-  line-height: 38px;
-  letter-spacing: 0.2px;
   text-align: center;
+  font-size: $font-xs;
+  letter-spacing: 0.2px;
+  line-height: 38px;
   height: 38px;
 }
 
@@ -22,12 +22,6 @@ nav {
   background: $navbar-gradient;
   position: absolute;
   z-index: 10;
-
-  /* inner shadow */
-
-  /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5); */
 
   .menu {
     display: none;
@@ -178,8 +172,6 @@ nav {
         font-weight: 400;
         display: block;
         margin-top: 0.4375rem;
-
-        /* remove display block and update */
       }
     }
 
@@ -245,8 +237,6 @@ nav {
   position: fixed;
   top: 0;
 }
-
-/* responsive */
 
 @media screen and (max-width: 1170px) {
   header {

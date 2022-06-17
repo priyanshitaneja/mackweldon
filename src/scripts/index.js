@@ -11,7 +11,6 @@ import '../data/styles/section3.scss';
 import '../data/styles/section4.scss';
 
 import './header.js';
-import './section1.js';
 import './section2.js';
 
 (function() {

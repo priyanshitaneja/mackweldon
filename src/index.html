@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mack Weldon</title>
   <meta name="description" content="" />
-  <!-- update favicon -->
   <link rel="icon" type="image/png" sizes="64x64" href="./data/assets/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -21,23 +20,23 @@
   <nav>
     <i class="fa-solid fa-bars menu"></i>
     <ul class="navbar-left">
-      <li>SHOP &nbsp;<i class="fa-solid fa-chevron-down fa-2xs"></i></li>
-      <li class="nav-stories">
+      <li class="cursor-pointer">SHOP &nbsp;<i class="fa-solid fa-chevron-down fa-2xs"></i></li>
+      <li class="nav-stories cursor-pointer">
         STORIES &nbsp;<i class="si fa-solid fa-chevron-down fa-2xs"></i>
       </li>
     </ul>
-    <div class="brand-info">
+    <div class="brand-info cursor-pointer">
       <div class="logo"></div>
       <div class="brand-name">MACK WELDON</div>
     </div>
     <ul class="navbar-right">
-      <li class="search">
+      <li class="search cursor-pointer">
         <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
       </li>
-      <li class="user-name">
+      <li class="user-name cursor-pointer">
         <i class="fa-regular fa-user fa-xs pad-r-5"></i>Account
       </li>
-      <li class="cart">
+      <li class="cart cursor-pointer">
         <span>Cart</span>
         <i class="fa-solid fa-circle fa-lg quantity">
           <i class="fa-solid fa-0"></i>
@@ -95,12 +94,11 @@
   </div>
   <div class="overlay"></div>
   <div class="section1 double-img-div">
-    <!-- rename double-img-div -->
     <div class="img-section">
       <img src="./data/assets/section1/section1gif.avif" />
       <div class="img-details">
         <p class="img-heading">Elevate Your Polo Game</p>
-        <button class="img-cta cta-btn uppercase">
+        <button class="img-cta cta-btn uppercase cursor-pointer">
           Shop now <i class="fa-solid fa-arrow-right fa-xs pad-l-12"></i>
         </button>
       </div>
@@ -109,14 +107,14 @@
       <img src="./data/assets/section1/section1img.avif" />
       <div class="img-details">
         <p class="img-heading">Just in: Stealth Polos</p>
-        <button class="img-cta uppercase">
+        <button class="img-cta uppercase cursor-pointer">
           Shop now <i class="fa-solid fa-arrow-right fa-xs pad-l-12"></i>
         </button>
       </div>
     </div>
   </div>
   <div class="section2">
-    <ul class="tabs">
+    <ul class="tabs cursor-pointer">
       <li data-tab-target="#featured">Featured</li>
       <li data-tab-target="#new-arrivals">New Arrivals</li>
       <li data-tab-target="#bestsellers">Bestsellers</li>
@@ -635,407 +633,414 @@
         </div>
       </div>
       <div class="category-content scrollable" id="bestsellers" data-tab-content>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name ">
-                Silver Sustainable T-shirt
-              </p>
-              <div class="product-rating ">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>271</span>
-              </div>
-              <p class="product-price">$90</p>
-            </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
           </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
               </div>
-              <p class="product-name">
-                Organic Pique T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>2100</span>
-              </div>
-              <p class="product-price">$90</p>
             </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
+            <p class="product-name ">
+              Silver Sustainable T-shirt
+            </p>
+            <div class="product-rating ">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>271</span>
             </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Silver Environment T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>180</span>
-              </div>
-              <p class="product-price">$129</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">4 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Pique Shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>27</span>
-              </div>
-              <p class="product-price">$89</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">8 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #093447"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #33dd00"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Pique Euro T-Shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>71</span>
-              </div>
-              <p class="product-price">$90</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">2 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Organic Pique Tee
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>63</span>
-              </div>
-              <p class="product-price">$189</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">3 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Silver Pique T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>27</span>
-              </div>
-              <p class="product-price">$89</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Silver Pique T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>40</span>
-              </div>
-              <p class="product-price">$99</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">5 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Pique T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>27</span>
-              </div>
-              <p class="product-price">$99</p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Silver Pique T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>271</span>
-              </div>
-              <p class="product-price">$90</p>
-            </div>
+            <p class="product-price">$90</p>
           </div>
         </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Organic Pique T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>2100</span>
+            </div>
+            <p class="product-price">$90</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Silver Environment T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>180</span>
+            </div>
+            <p class="product-price">$129</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">4 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Pique Shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>27</span>
+            </div>
+            <p class="product-price">$89</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">8 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #093447"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #33dd00"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Pique Euro T-Shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>71</span>
+            </div>
+            <p class="product-price">$90</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">2 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Organic Pique Tee
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>63</span>
+            </div>
+            <p class="product-price">$189</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">3 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Silver Pique T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>27</span>
+            </div>
+            <p class="product-price">$89</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Silver Pique T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>40</span>
+            </div>
+            <p class="product-price">$99</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">5 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Pique T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>27</span>
+            </div>
+            <p class="product-price">$99</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Silver Pique T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>271</span>
+            </div>
+            <p class="product-price">$90</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section3">
       <div class="double-img-div">
-        <!-- rename double-img-div -->
         <div class="img-section">
-          <img src="./data/assets/section3/section3Left.avif" />
+          <img src="./data/assets/section3/section3Left.avif"
+            data-srcset="https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=180 180w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=360 360w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=540 540w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=720 720w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=900 900w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=1080 1080w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=1296 1296w,https://images.prismic.io/mackweldon/e2b0a793-cda4-4975-8df8-0e7d06ed392d_Refer+a+friend.jpg?auto=compress,format&w=1440 1440w"
+            data-sizes="100vw"
+            alt="Man in black and white long sleeve shirt standing beside man in black and white crew"
+            class="lazyload" />
           <div class="img-details">
             <p class="img-heading">Refer A Friend</p>
             <p class="img-description">
               Earn rewards when you introduce your friends.
             </p>
-            <button class="img-cta uppercase">
+            <button class="img-cta uppercase cursor-pointer">
               Share now <i class="fa-solid fa-arrow-right fa-xs pad-l-12"></i>
             </button>
           </div>
         </div>
         <div class="img-section">
-          <img src="./data/assets/section3/section3Right.avif" />
+          <img src="./data/assets/section3/section3Right.avif"
+            data-srcset="https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=180 180w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=360 360w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=540 540w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=720 720w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=900 900w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=1080 1080w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=1296 1296w,https://images.prismic.io/mackweldon/116bf14a-e839-446f-a600-7f2fb3d05fca_Operator+%281%29.jpg?auto=compress,format&w=1440 1440w"
+            data-sizes="100vw" alt="Man indoors and sitting" class="lazyload" />
           <div class="img-details">
             <p class="img-heading">Explore Better Workwear</p>
             <p class="img-description">
               Adaptive, technical styles for the modern workday and beyond.
             </p>
-            <button class="img-cta uppercase">
+            <button class="img-cta uppercase cursor-pointer">
               Shop the Operator<i class="fa-solid fa-arrow-right fa-xs pad-l-12"></i>
             </button>
           </div>
         </div>
       </div>
       <div class="img-fullwidth">
-        <img src="./data/assets/section3/section3-3.avif" />
+        <img src="./data/assets/section3/section3-3.avif"
+          data-srcset="https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=180 180w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=360 360w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=540 540w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=720 720w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=900 900w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=1080 1080w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=1296 1296w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=1512 1512w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=1728 1728w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=1944 1944w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=2160 2160w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=2376 2376w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=2592 2592w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=2808 2808w,https://images.prismic.io/mackweldon/a47ea1b6-c5a2-4697-933e-f2fcc24437a0_Stealth.jpg?auto=compress,format&w=2880 2880w"
+          alt="Man in gray crew neck t-shirt" data-sizes="100vw" class="lazyload" />
         <div class="img-details">
           <p class="img-heading">No Compromises. All Stealth.</p>
           <p class="img-description">
             Level up your training with covert body mapping technology and
             second-skin comfort.
           </p>
-          <button class="img-cta uppercase">
+          <button class="img-cta uppercase cursor-pointer">
             Shop now
             <i class="fa-solid fa-arrow-right fa-xs pad-l-12"></i>
           </button>
@@ -1046,151 +1051,151 @@
       <h2>Bestsellers</h2>
       <div class="recommendations flex flex-row scrollable">
         <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">6 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                Pima T-shirt Polo
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>271</span>
-              </div>
-              <p class="product-price">$68</p>
-            </div>
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
           </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">5 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e18686"></i>
-                </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">6 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
               </div>
-              <p class="product-name">
-                Radius Flex Short
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half fa-sm"></i>
-                <span>286</span>
-              </div>
-              <p class="product-price">$88</p>
             </div>
+            <p class="product-name">
+              Pima T-shirt Polo
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>271</span>
+            </div>
+            <p class="product-price">$68</p>
           </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">4 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
-                </div>
-              </div>
-              <p class="product-name">
-                3-Pack 18-Hour Jersey
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>7631</span>
-              </div>
-              <p class="product-price">
-                <span class="sale-price">$78</span>
-                <span class="mrp">$84</span>
-              </p>
-            </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
           </div>
-          <div class="product">
-            <div class="product-img bestseller-img">
-              <p class="quick-add uppercase">Quick Add</p>
-              <ul class="product-sizes">
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-                <li>XXL</li>
-              </ul>
-            </div>
-            <div class="product-info">
-              <div class="product-colors">
-                <h6 class="colors-count">16 colors available</h6>
-                <div class="colors-list">
-                  <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
-                  <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
-                </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">5 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e18686"></i>
               </div>
-              <p class="product-name">
-                Pima Crew Neck T-shirt
-              </p>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>27</span>
-              </div>
-              <p class="product-price">$38</p>
             </div>
+            <p class="product-name">
+              Radius Flex Short
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half fa-sm"></i>
+              <span>286</span>
+            </div>
+            <p class="product-price">$88</p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">4 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #515151"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #312929"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              3-Pack 18-Hour Jersey
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>7631</span>
+            </div>
+            <p class="product-price">
+              <span class="sale-price">$78</span>
+              <span class="mrp">$84</span>
+            </p>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-img bestseller-img">
+            <p class="quick-add uppercase">Quick Add</p>
+            <ul class="product-sizes">
+              <li>S</li>
+              <li>M</li>
+              <li>L</li>
+              <li>XL</li>
+              <li>XXL</li>
+            </ul>
+          </div>
+          <div class="product-info">
+            <div class="product-colors">
+              <h6 class="colors-count">16 colors available</h6>
+              <div class="colors-list">
+                <i class="fa-solid fa-circle fa-lg" style="color: #7c0e0e"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #2c7809"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #153a6a"></i>
+                <i class="fa-solid fa-circle fa-lg" style="color: #e4da2a"></i>
+              </div>
+            </div>
+            <p class="product-name">
+              Pima Crew Neck T-shirt
+            </p>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>27</span>
+            </div>
+            <p class="product-price">$38</p>
+          </div>
         </div>
       </div>
     </div>

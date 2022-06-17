@@ -30,7 +30,9 @@
 }
 
 @media screen and (max-width: 639px) {
-  .section1 div.img-section:nth-child(2) { /* how to do with scss, update */
-    display: none;
+  .section1 {
+    .img-section:nth-child(2) {
+      display: none;
+    }
   }
 }

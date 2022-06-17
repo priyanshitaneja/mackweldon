@@ -3,10 +3,10 @@
 header {
   background-color: $navy;
   color: $white;
-  font-size: $font-xs;
-  line-height: 38px;
-  letter-spacing: 0.2px;
   text-align: center;
+  font-size: $font-xs;
+  letter-spacing: 0.2px;
+  line-height: 38px;
   height: 38px;
 }
 
@@ -23,19 +23,12 @@ nav {
   position: absolute;
   z-index: 10;
 
-  /* inner shadow */
-
-  /* -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5); */
-
   .menu {
     display: none;
   }
 
   ul {
     list-style-type: none;
-    cursor: pointer;
     height: 100%;
 
     li {
@@ -110,7 +103,6 @@ nav {
   .brand-info {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
 
     .logo {
       height: 26px;
@@ -180,8 +172,6 @@ nav {
         font-weight: 400;
         display: block;
         margin-top: 0.4375rem;
-
-        /* remove display block and update */
       }
     }
 
@@ -196,7 +186,7 @@ nav {
       div {
         margin-bottom: 20px;
         max-width: 13.3125rem;
-        font-size: 0.875rem;
+        font-size: $font-md;
         line-height: 1.5rem;
       }
 
@@ -247,8 +237,6 @@ nav {
   position: fixed;
   top: 0;
 }
-
-/* responsive */
 
 @media screen and (max-width: 1170px) {
   header {

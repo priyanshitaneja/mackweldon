@@ -21,14 +21,13 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-bottom: 40px;
-    cursor: pointer;
     font-size: $font-xl;
     font-weight: 400;
     line-height: 2rem;
     color: $grey;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 40px;
     border-bottom: 1px solid $grey;
 
     li {
@@ -56,7 +55,6 @@
 
       .item-img {
         width: 305px;
-        max-height: 369px;
         min-height: 367px;
         background:
           url("../assets/section2/featured.png") no-repeat center
@@ -81,8 +79,8 @@
 
         .item-des {
           font-size: $font-md;
-          margin-bottom: 4px;
           line-height: 1.5rem;
+          margin-bottom: 4px;
         }
       }
     }
@@ -90,8 +88,6 @@
 
   .scrollable {
     overflow-x: scroll;
-
-    /* scroll-behavior: smooth; */
   }
 }
 
@@ -142,7 +138,7 @@
 @media screen and (max-width: 767px) {
   .section2 {
     .tabs {
-      font-size: 0.875rem;
+      font-size: $font-md;
       margin-bottom: 24px;
       margin-left: 16px;
       margin-right: 16px;

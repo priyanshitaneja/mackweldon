@@ -1,0 +1,385 @@
+@import "./variables.scss";
+
+header {
+  background-color: $navy;
+  color: $white;
+  text-align: center;
+  font-size: $font-xs;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+  height: 38px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 82px;
+  width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+  color: $white;
+  background: $navbar-gradient;
+  position: absolute;
+  z-index: 10;
+
+  .menu {
+    display: none;
+  }
+
+  ul {
+    list-style-type: none;
+    height: 100%;
+
+    li {
+      display: inline;
+      color: inherit;
+      height: 100%;
+
+      &:hover {
+        border-bottom: 4px solid $grey;
+      }
+    }
+  }
+
+  .navbar-left,
+  .navbar-right {
+    font-size: $font-s;
+    line-height: 77px;
+    align-items: center;
+  }
+
+  .navbar-left {
+    width: 22%;
+    display: flex;
+    justify-content: flex-start;
+
+    i:hover {
+      transform: rotate(-180deg);
+    }
+
+    .nav-stories {
+      margin-left: 51px;
+    }
+  }
+
+  .navbar-right {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.2px;
+
+    .search {
+      i {
+        font-size: 13px;
+        margin-right: 6.5px;
+      }
+    }
+
+    .user-name {
+      i {
+        font-size: $font-sm;
+        margin-right: 7px;
+      }
+    }
+
+    .quantity {
+      color: $cobalt-blue;
+      opacity: 1;
+      position: relative;
+      font-size: 19px;
+      margin-left: 9px;
+
+      i {
+        color: $white;
+        position: absolute;
+        top: -5px;
+        left: 33%;
+        font-size: $font-xs;
+      }
+    }
+  }
+
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      height: 26px;
+      background: url("../assets/header/logo.png") no-repeat center;
+    }
+
+    .brand-name {
+      color: $white;
+      padding-top: 10px;
+    }
+  }
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+    background-image: none;
+
+    .logo {
+      background: url("../assets/header/logo-black.png") no-repeat center;
+    }
+
+    .brand-name {
+      color: $black;
+    }
+  }
+}
+
+.stories-dropdown {
+  padding: 0 22px;
+  border-top: 1px solid $light-grey;
+  display: none;
+  position: absolute;
+  top: 120px;
+  background-color: $white;
+  z-index: 9;
+
+  ul {
+    padding: 32px 63px 49px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+
+    a {
+      color: $grey;
+      text-align: center;
+
+      img {
+        width: 216px;
+        min-height: 16.6875rem;
+        margin-bottom: 5px;
+      }
+
+      p,
+      span {
+        line-height: 1rem;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+
+      span {
+        font-size: 0.6875rem;
+        font-weight: 400;
+        display: block;
+        margin-top: 0.4375rem;
+      }
+    }
+
+    .stories-info {
+      border-right: 1px solid $light-grey;
+      padding-top: 12px;
+      margin-right: 16px;
+      min-width: 16.375rem;
+      color: $grey;
+      font-size: $font-md;
+
+      div {
+        margin-bottom: 20px;
+        max-width: 13.3125rem;
+        font-size: $font-md;
+        line-height: 1.5rem;
+      }
+
+      strong {
+        margin-bottom: 0.75rem;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        line-height: 1;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .mob-text {
+        display: none;
+      }
+    }
+
+    .dropdown-img-card {
+      grid-auto-flow: column;
+      justify-content: end;
+      margin: 0 0 0 auto;
+      padding-top: 14px;
+      padding-left: 32px;
+    }
+
+    .dropdown-mob-image {
+      display: none;
+    }
+  }
+
+  &.is-opened {
+    display: block;
+  }
+}
+
+.rotate-icon {
+  transform: rotate(-180deg);
+}
+
+.nav-white-bg {
+  background-color: $white;
+  background-image: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (max-width: 1170px) {
+  header {
+    height: 28px;
+    line-height: 28px;
+  }
+
+  nav {
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .menu {
+      display: flex;
+      width: 22%;
+    }
+
+    .navbar-left {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: $white;
+      color: $black;
+      height: 100vh;
+      width: 300px;
+      padding: 15px;
+
+      li {
+        padding: 10px 0;
+        height: fit-content;
+      }
+
+      .nav-stories {
+        margin-left: 0;
+      }
+
+      &.active {
+        display: flex;
+        z-index: 11;
+      }
+
+      &.open {
+        animation: slide-in 0.5s ease;
+        animation-fill-mode: forwards;
+      }
+
+      &.close {
+        animation: slide-out 0.5s ease;
+        animation-fill-mode: backwards;
+      }
+    }
+
+    .navbar-left,
+    .navbar-right {
+      line-height: 40px;
+
+      li {
+        &:hover {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .brand-info {
+      .logo {
+        display: none;
+      }
+
+      .brand-name {
+        padding-top: 0;
+      }
+    }
+
+    .navbar-right {
+      justify-content: flex-end;
+      align-items: flex-end; /* might not need it if center brandName */
+
+      .user-name {
+        display: none;
+      }
+
+      .search {
+        display: none;
+      }
+    }
+  }
+
+  .stories-dropdown {
+    top: 100px;
+
+    &.stories-mob {
+      z-index: 99;
+      width: 300px;
+      padding: 10px;
+
+      ul {
+        display: flex;
+      }
+
+      ul a img {
+        width: 100%; /* do this in a better way */
+      }
+
+      .stories-info {
+        display: none;
+      }
+
+      .dropdown-img-card {
+        display: none;
+      }
+
+      .dropdown-mob-image {
+        display: block;
+        width: 100%;
+      }
+
+      .mob-text {
+        font-size: $font-md;
+
+        p {
+          color: $grey;
+          text-align: left;
+        }
+
+        a {
+          color: $cobalt-blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    .navbar-right {
+      .cart {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}

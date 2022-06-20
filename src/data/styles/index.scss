@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block; /* remove from here and only add to particular images where required */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background-color: $overlay;
+  transition: ease-out 1s;
+
+  &.active {
+    display: block;
+  }
+}

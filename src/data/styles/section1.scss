@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.section1 {
+  .img-section {
+    .img-details {
+      .img-cta {
+        &:hover {
+          i {
+            transform: translate(32px);
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .img-details {
+        bottom: 3.125rem;
+
+        .img-heading {
+          font-size: 36px;
+          letter-spacing: -1px;
+        }
+
+        .img-cta {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .section1 {
+    .img-section:nth-child(2) {
+      display: none;
+    }
+  }
+}

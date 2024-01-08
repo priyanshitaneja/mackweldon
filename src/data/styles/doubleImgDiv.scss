@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.double-img-div {
+  display: flex;
+
+  .img-section {
+    position: relative;
+
+    img {
+      width: 100%;
+      min-height: 21.3125rem;
+      max-height: 75rem;
+      z-index: -1;
+    }
+
+    .img-details {
+      position: absolute;
+      left: 4rem;
+      bottom: 4rem;
+      color: $white;
+
+      .img-heading {
+        font-size: 48px;
+        letter-spacing: -0.0625rem;
+      }
+
+      .img-description {
+        font-size: $font-lg;
+        padding: 5px 0;
+      }
+
+      .img-cta {
+        font-family: $lato;
+        font-size: $font-lg;
+        color: inherit;
+        background: none;
+        margin-top: 16px;
+        border: none;
+        transition: transform 0.001s linear !important;
+      }
+
+      .cta-btn {
+        color: $grey;
+        background-color: $white;
+        border: 0;
+        padding: 15px 56px;
+        border-radius: 5px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .double-img-div {
+    .img-section {
+      img {
+        min-height: 60vh;
+        object-fit: cover;
+      }
+
+      .img-details {
+        left: 15px;
+        bottom: 33px;
+
+        .img-heading {
+          font-size: $font-2xl;
+        }
+
+        .img-cta {
+          font-size: $font-sm;
+        }
+
+        .cta-btn {
+          padding: 12px 32px;
+        }
+      }
+    }
+  }
+}
